@@ -1,0 +1,40 @@
+<!--{% extends 'portfolio/base.html' %}-->
+
+<!--{% block name %}Home{% endblock %}-->
+
+<!--{% block content %}-->
+<!--		-->
+<!--		<div id="index-wrapper">-->
+<!--			<div id="index-message">-->
+<!--				<h1 id="index-header">Hello!</h1>-->
+<!--				<p>My name is &nbsp;<span class="index-em" id="name"></span> ,-->
+<!--				<br> and I am an aspiring &nbsp;<span class="index-em" id="job"></span> !</p>-->
+<!--			</div>-->
+<!--		</div>-->
+
+<!--{% endblock %}-->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalu HomePage</title>
+    <script type="text/javascript" src="{% static 'portfolio/scripts.js' %}"></script>
+</head>
+<body>
+
+    <div id="content">
+		<nav>
+
+			<li id="home-nav" class="{% if classhome %}{{classhome}}{% else %}main-nav{% endif %}"><a href="{% url 'index' %}">HOME</a> /</li>
+			<li class="{% if classprojects %}{{classprojects}}{% else %}main-nav{% endif %}" id="projects-nav"><a href="{% url 'projects' %}">PROJECTS</a> /</li>
+			<li class="{% if classresume %}{{classresume}}{% else %}main-nav{% endif %}" id="resume-nav"><a href="{% url 'resume' %}">RESUME</a> /</li>
+			<li class="{% if classabout %}{{classabout}}{% else %}main-nav{% endif %}" id="about-nav"><a href="{% url 'about' %}">ABOUT</a></li>
+			{# <li class="{% if classcontact %}{{classcontact}}{% else %}main-nav{% endif %}" id="contact-nav"><a href="{% url 'contact' %}">CONTACT</a></li> #}
+		</nav>
+
+    </div>
+
+</body>
+</html>
