@@ -4,12 +4,43 @@
 
 {% block content %}
 
-		<div id="index-wrapper">
-			<div id="index-message">
-				<h1 id="index-header">PLACEHOLDER</h1>
-				<p>Kalu Awa &nbsp;<span class="index-em" id="name"></span> ,
-				<br> PLACEHOLDER &nbsp;<span class="index-em" id="job"></span> !</p>
-			</div>
+
+<div id="index-wrapper">
+	<div id="index-message">
+		<h1 id="index-header">Kalu Awa</h1>
+		<p>Kalu Awa &nbsp;<span class="index-em" id="name"></span> ,
+			<br> PLACEHOLDER &nbsp;<span class="index-em" id="job"></span> !</p>
+	</div>
+</div>
+
+
+{% load static %}
+
+
+		<h1>Technologies</h1>
+		<div class="technologies">
+<!--			<img src="../static/portfolio/images/html5-logo.png" class="tech-icons">-->
+<!--			<img src="{% static 'portfolio/images/html5-logo.png' %}">-->
+			<img src="{% static 'https://www.w3schools.com/images/w3schools_green.jpg' %}" alt="Hi!" />
+<!--            <img src="images/css3-logo.png" class="tech-icons">-->
+<!--            <img src="images/js-logo.svg" class="tech-icons">-->
+<!--            <img src="images/reactjsicon.png" class="tech-icons">-->
+<!--            <img src="images/node-js-logo.png" class="tech-icons">-->
+<!--            <img src="images/expressjs.png" class="tech-icons">-->
+<!--            <img src="images/mongodb.png" class="tech-icons">-->
+<!--            <img src="images/python-logo.png" class="tech-icons">-->
+		</div>
+		<div class ='tech-list'>
+			<ul>
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>Javascript</li>
+				<li>React</li>
+            	<li>Node JS</li>
+            	<li>Express JS</li>
+            	<li>MongoDB</li>
+				<li>PostgresSQL</li>
+			</ul>
 		</div>
 
 {% endblock %}
@@ -51,6 +82,7 @@
 		</nav>
 
     </div>
+
 
 </body>
 </html>

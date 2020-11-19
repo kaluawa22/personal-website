@@ -134,9 +134,16 @@ nav {
 	padding: 2.5%;
 }
 
-#header-message, #index-header{
+/*#header-message, #index-header{
 	font-family: Cabin Sketch;
 }
+*/
+#header-message, #index-header{
+	font-family: Lora;
+}
+
+
+
 
 .header-contact{
 	color: #33ffcc;
@@ -360,3 +367,4 @@ dt {
 #data14 {
 	animation: 2s ease-out 0s 1 data14-anim;
 }
+
